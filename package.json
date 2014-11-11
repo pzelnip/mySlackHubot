@@ -22,6 +22,7 @@
     "hubot-leaderboard": ">= 0.4.0",
     "hubot-gglurl": ">= 0.0.3",
     "hubot-caffeine": ">= 0.1.0",
+    "hubot-explainshell": ">= 0.0.0",
     "hubot-whatthecommit": ">= 0.0.3"
   },
   "engines": {

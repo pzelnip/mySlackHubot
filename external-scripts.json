@@ -13,5 +13,6 @@
   "hubot-leaderboard",
   "hubot-gglurl",
   "hubot-caffeine",
+  "hubot-explainshell",
   "hubot-whatthecommit"
 ]
