@@ -12,5 +12,7 @@
   "hubot-youtube",
   "hubot-leaderboard",
   "hubot-gglurl",
+  "hubot-thank-you",
+  "hubot-caffeine",
   "hubot-whatthecommit"
 ]
