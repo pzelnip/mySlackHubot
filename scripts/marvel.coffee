@@ -19,7 +19,7 @@ privkey = process.env.HUBOT_MARVEL_PRIVATE_KEY
 
 module.exports = (robot) ->
   robot.respond /marvel (.*)/i, (msg) ->
-    msg.send msg.match[1] + "'" + pubkey + "'  '" + privkey + "'" 
+    msg.send msg.match[1] 
 
 
 
