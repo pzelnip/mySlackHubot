@@ -23,6 +23,7 @@
     "hubot-gglurl": ">= 0.0.3",
     "hubot-caffeine": ">= 0.1.0",
     "hubot-explainshell": ">= 0.0.0",
+    "hubot-octopus": ">= 0.0.1",
     "hubot-whatthecommit": ">= 0.0.3"
   },
   "engines": {
