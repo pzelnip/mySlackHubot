@@ -1,17 +1,17 @@
 # Description:
-# Display random generated class name from classnamer.com 
+#   Display random generated class name from classnamer.com 
 #
 # Dependencies:
-# None
+#   None
 #
 # Configuration:
-# None
+#   None
 #
 # Commands:
-# hubot class 
+#   hubot class  - generate a random class name from classnamer.com
 #
 # Author:
-# pzelnip 
+#   pzelnip 
 #
 module.exports = (robot) ->
   robot.respond /class/i, (msg) ->
