@@ -24,7 +24,7 @@ module.exports = (robot) ->
 
     ts = "" + new Date().getTime()
     m = crypto.createHash('md5')
-    m.update("" + ts)
+    m.update(ts)
     m.update(privkey)
     m.update(pubkey)
     md5hash2 = m.digest("hex")
@@ -46,12 +46,15 @@ module.exports = (robot) ->
                 thumbnail = result.thumbnail.path + "." + result.thumbnail.extension
 
             wiki = "No Wiki link available"
+            detail = "No detail link available"
             if result.urls.length != 0
                 for url in result.urls
                     if url.type == "wiki"
                         wiki = url.url
+                    if url.type == "detail"
+                        detail = url.url
 
-            msg.send "Description: #{desc}\nWiki: #{wiki}\nThumbnail: #{thumbnail}"
+            msg.send "Description: #{desc}\nWiki: #{wiki}\nDetail: #{detail}\nThumbnail: #{thumbnail}"
           else
             msg.send "No data available for #{char}"
         catch error
