@@ -1,0 +1,24 @@
+npm install -g hubot coffee-script
+hubot --create ~/temp/sandbox/hubot
+npm install -g yo generator-hubot
+mkdir -p /Users/aparkin/temp/sandbox/hubot
+cd /Users/aparkin/temp/sandbox/hubot/
+yo hubot
+
+npm install hubot-slack --save
+
+heroku create pzelnip-hubot
+heroku addons:add redistogo:nano
+heroku config:add HEROKU_URL=https://pzelnip-hubot.herokuapp.com
+git push heroku master
+heroku ps:scale web=1
+heroku config:add HUBOT_SLACK_ROOMS='#testingoutshit'
+heroku config:add HUBOT_SLACK_TOKEN=.......
+heroku config:add HUBOT_SLACK_TEAM=pzelnip
+heroku config:add HUBOT_SLACK_BOTNAME=hubot
+
+heroku config:add HUBOT_MEMEGEN_USERNAME=......
+heroku config:add HUBOT_MEMEGEN_PASSWORD=......
+
+heroku config:add HUBOT_MARVEL_PUBLIC_KEY=....
+heroku config:add HUBOT_MARVEL_PRIVATE_KEY=....
